@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir-Next", "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  nav {
+    padding: 5px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    background-color: white;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: "Avenir-Next", "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  
+  .leftnav {
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  .leftnav img {
+    height: 35px;
+    padding-left: 10px;
+  }
+  
+  .rightnav {
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  .rightnav ul {
+    list-style-type: none;
+  }
+  .rightnav ul li img {
+    height: 15px;
+    margin-top: 15px;
+  }
+  nav li {
+    display: inline-block;
+  }
+  
+  nav ul li select{
+    font-size: 18px;
+    color: grey;
+  
+    padding: 15px 10px;
+    text-decoration: none;
+  
+    border: none;
+  }
+  
+  
+  nav ul li a{
+    font-size: 18px;
+    color: grey;
+  
+    padding: 15px 10px;
+    text-decoration: none;
+  
+    border: none;
+  }
+  
+  
+  
+  nav .apply {
+    background-color: darkorange;
+    padding: 5px 40px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    nav {
+      display: block;
+    }
+  }
+  
+  .home-page-section {
+    position: relative;
+    margin-top: 5px;
+    height: 100vh;
+  
+    background-image: url("Images/hero.jpg");
+    background-size: cover;
+  }
+  
+  .overlay {
+    background-color: #000000b3;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+  
+  .home-page-container {
+    position: absolute;
+  
+    padding: 50px 120px;
+  }
+  
+  .home-page-section h1 {
+    color: white;
+    font-size: 90px;
+  }
+  
+  .home-page-section h3 {
+    color: white;
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+  
+  .btns {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  
+  .apply-btn {
+    width: 20%;
+    height: 10%;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  
+    background-color: #4992ca;
+    border: none;
+  }
+  
+  .register-btn {
+    width: 20%;
+    height: 10%;
+    padding: 15px;
+  
+    border: 2px solid #fff;
+  
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #0000;
+  }
+  
+  .learn-btn {
+    width: 48%;
+    height: 10%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+  
+    text-align: center;
+    background-color: white;
+    margin: 25px 0;
+    padding: 15px 0px;
+    padding-right: 3px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .home-page-container {
+      padding: 1rem 1rem;
+    }
+    .home-page-container h1 {
+      font-size: 2.7rem;
+    }
+    .home-page-container h3 {
+      font-size: 1.5rem;
+    }
+  
+    .apply-btn,
+    .register-btn,
+    .learn-btn {
+      width: 35%;
+  
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+    }
+    .learn-btn {
+      width: 60%;
+    }
+  }
+  
+  .pocket-monster-section {
+    padding: 30px 120px;
+    background-color: #4992ca;
+    color: white;
+  
+    font-family: "Avenir-Next", "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .pocket-monster-section h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+  
+  .pocket-monster-section h4 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .pocket-monster-container {
+    margin-top: 20px;
+    align-items: center;
+  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .pocket-monster-prop {
+    text-align: center;
+  
+    padding: 10px;
+    width: 28%;
+  }
+  
+  .pocket-monster-prop i {
+    font-size: 40px;
+    margin: 15px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .pocket-monster-container {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .pocket-monster-prop {
+      width: auto;
+    }
+    .pocket-monster-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .stats-section h2 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .stats-section {
+    text-align: center;
+    padding: 30px 120px;
+  }
+  
+  .stats-container h4 {
+    font-size: 30px;
+  }
+  
+  .stats-container {
+    display: flex;
+  }
+  
+  .stats > p {
+    margin-top: 20px;
+    padding: 15px 15px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .stats-container {
+      flex-wrap: wrap;
+    }
+    .stats > img {
+      width: 300px;
+      height: 300px;
+    }
+    .stats-section {
+      padding: 30px 0px;
+    }
+  
+    .stats:first-child {
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+  }
+  
+  .poke-section {
+    font-family: "Avenir-Next", "Roboto", sans-serif;
+    text-align: center;
+    padding: 30px 120px;
+    font-weight: 100;
+    color: grey;
+  }
+  
+  .poke-section > h1 {
+    font-size: 40px;
+    color: black;
+  }
+  
+  .pokemon-info {
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  .pokemon-info > img {
+    width: 160px;
+  
+    height: 170px;
+    margin-right: 50px;
+    padding: 10px;
+  }
+  .pokemon-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+  
+  .pokemon-name > h4 {
+    font-size: 30px;
+  }
+  .pokemon-name > h6 {
+    font-size: 18px;
+  }
+  .pokemon-name > img {
+    height: 50px;
+    width: 150px;
+  }
+  
+  .para p {
+    text-align: left;
+    font-size: 15px;
+  
+    padding: 40px;
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .pokemon-info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .poke-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .quesans-section {
+    background-color: #4992ca;
+    padding: 30px 100px;
+    color: white;
+  }
+  .quesans-section h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+  .quesans-section h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .quesans-section ol {
+    padding: 0 25px;
+  }
+  
+  .quesans-section ol > li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .quesans-section ol ul > li {
+    line-height: 150%;
+  }
+  
+  .quesans-section ol ul {
+    margin-left: 100px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .quesans-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .battle-section {
+    text-align: center;
+    padding: 30px 120px;
+  }
+  
+  .battle-section h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .battle-section h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .battle-section-container {
+    display: flex;
+  
+    text-align: left;
+  }
+  
+  .battle-section-content1 {
+    flex: 1;
+    padding: 0 30px;
+  }
+  
+  .battle-section-content1-p {
+    margin: 20px 0px;
+    line-height: 200%;
+    color: #8a8a8a;
+  }
+  p {
+    margin: 20px 0px;
+  }
+  
+  .battle-section-content2 {
+    flex: 2;
+    padding: 0 30px;
+  }
+  table {
+    border: 1px solid #8a8a8a;
+    border-collapse: collapse;
+  }
+  
+  table th {
+    color: black;
+    border: 1px solid #8a8a8a;
+  
+    padding: 18px 5px;
+  }
+  
+  table td {
+    color: #8a8a8a;
+    border: 1px solid #8a8a8a;
+  
+    padding: 18px 5px;
+  }
+  
+  .battle-section button {
+    height: 50px;
+    width: 230px;
+    background-color: #4992ca;
+    color: white;
+    border: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .battle-section {
+      padding: 30px 0px;
+    }
+    .battle-section-content1-p {
+      margin: 0px 0px;
+      margin-bottom: 20px;
+      line-height: 120%;
+      color: #8a8a8a;
+    }
+    p {
+      margin: 20px 0px;
+    }
+    .battle-section-content1 {
+      padding: 0px 10px;
+    }
+    .battle-section-content2 {
+      padding: 0px 10px;
+    }
+  
+    table th {
+      color: black;
+      border: 1px solid #8a8a8a;
+  
+      padding: 10px 3px;
+    }
+  }
+  
+  .know-section {
+    text-align: center;
+    color: white;
+    background-color: #424242;
+    padding: 30px 120px;
+  }
+  .know-section h4 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  .know-section button {
+    background-color: #0000;
+    height: 50px;
+    width: 230px;
+    border: 2px solid #fff;
+    color: white;
+  
+    margin-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .know-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .card-section {
+    padding: 25px 0px;
+    text-align: center;
+  
+    align-items: center;
+  }
+  .card-section div {
+    max-width: 220px;
+    margin: auto;
+  }
+  
+  .card-section-div1 {
+    border-top: 20px solid #4992ca;
+    padding: 15px 15px;
+    background-color: rgba(231, 211, 211, 0.432);
+  }
+  
+  .card-section-div2 {
+    padding: 20px 15px;
+    background-color: rgb(248, 244, 244);
+  }
+  
+  .card-section p {
+    max-width: 200px;
+    margin: auto;
+  }
+  
+  .card-section h3 {
+    color: #8a8a8a;
+  }
+  
+  .card-section h2 {
+    font-size: 45px;
+    color: #8a8a8a;
+  }
+  
+  .trainer-section {
+    font-family: "Avenir-Next", "Roboto", sans-serif;
+    text-align: center;
+    padding: 30px 120px;
+    font-weight: 100;
+    color: white;
+    background-color: #4992ca;
+  }
+  
+  .trainer-section > h1 {
+    font-size: 40px;
+    color: black;
+  }
+  
+  .trainer-info {
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  .trainer-info > img {
+    width: 160px;
+  
+    height: 170px;
+    margin-right: 50px;
+    padding: 10px;
+  }
+  .trainer-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px;
+  }
+  
+  .trainer-name > h4 {
+    font-size: 30px;
+  }
+  .trainer-name > h6 {
+    font-size: 16px;
+  }
+  .trainer-name > img {
+    height: 50px;
+    width: 150px;
+  }
+  
+  .para p {
+    text-align: left;
+    font-size: 15px;
+  
+    padding: 40px;
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .trainer-info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .trainer-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .generation-section {
+    padding: 30px 120px;
+  }
+  .generation-section h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+  
+    color: #8a8a8a;
+  }
+  .generation-section-1 {
+    display: flex;
+  
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    margin: auto;
+    max-width: 900px;
+  }
+  
+  .generation-section-1 h4 {
+    font-size: 30px;
+    margin: 20px 10px;
+  }
+  
+  .generation-section-1 p {
+    padding: 10px 0;
+    line-height: 150%;
+    margin: 20px 10px;
+    font-weight: 105;
+  }
+  
+  .generation-section-1-maindiv {
+    margin: 10px;
+    max-width: 360px;
+  
+    border-top: 15px solid #4992ca;
+  }
+  
+  .generation-section-1-div1 {
+    background-color: whitesmoke;
+    border: solid whitesmoke;
+    border: 1px solid rgba(128, 128, 128, 0.322);
+  }
+  .generation-section-1-div2 {
+    margin-top: 0px;
+  
+    height: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.322);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .generation-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .subscribe-section {
+    text-align: center;
+    color: white;
+    background-color: #424242;
+    padding: 30px 120px;
+  }
+  
+  .subscribe-section input {
+    height: 50px;
+    width: 350px;
+  }
+  .subscribe-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .subscribe-section button {
+    background-color: #0000;
+    height: 50px;
+    width: 230px;
+    border: 2px solid #fff;
+    color: white;
+  
+    margin-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .subscribe-section {
+      padding: 30px 0px;
+    }
+  
+    .subscribe-section button {
+      margin-top: 10px;
+    }
+  }
+  
+  .games-section {
+    padding: 30px 120px;
+    text-align: center;
+  }
+  
+  .games-section-1-div1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .games-section img {
+    height: 200px;
+    width: 180px;
+  }
+  
+  .games-section-1-div1 i {
+    font-size: medium;
+    margin-left: 5px;
+  }
+  .games-section p {
+    max-width: 300px;
+    margin: 20px;
+  }
+  .games-section h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #8a8a8a;
+  }
+  .games-section-1 {
+    display: flex;
+  
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .games-section button {
+    height: 50px;
+    width: 230px;
+    background-color: #4992ca;
+    color: white;
+    border: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .games-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  .designers-section {
+    padding: 30px 120px;
+  
+    background-color: #4992ca;
+    color: white;
+    text-align: center;
+  }
+  
+  .designers-section h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  
+  .designers-section img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .designers-section h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .designers-section-1 div {
+    width: 28%;
+    margin: 5px;
+  }
+  
+  .designers-section-1 {
+    display: flex;
+    justify-content: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .designers-section {
+      padding: 30px 0px;
+    }
+  
+    .designers-section-1 {
+      display: flex;
+  
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .designers-section-1 div {
+      width: 100%;
+      margin: 5px;
+    }
+  }
+  
+  .logo-section {
+    padding: 30px 120px;
+    text-align: center;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo-section img {
+    height: 50px;
+    width: 130px;
+    margin: 10px 70px;
+  }
+  .logo-section h2 {
+    font-size: 45px;
+  
+    color: #8a8a8a;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo-section {
+      padding: 30px 0px;
+    }
+  
+    .logos {
+      display: flex;
+    }
+  
+    .logos-1,
+    .logos-2,
+    .logos-3 {
+      display: flex;
+  
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logos img {
+      width: 80%;
+    }
+  }
+  
+  .know-more-section {
+    padding: 30px 120px;
+  
+    color: white;
+    text-align: center;
+    background-color: #4992ca;
+  }
+  .know-more-section h4 {
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+  .know-more-section button {
+    background-color: transparent;
+    height: 50px;
+    width: 230px;
+    border: 2px solid white;
+    color: white;
+  
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .know-more-section {
+      padding: 30px 0px;
+    }
+  }
+  
+  footer {
+    padding: 30px 120px;
+    text-align: center;
+  
+    color: #8a8a8a;
+  
+    background-color: rgb(18, 29, 32);
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+  }
+  
+  .footer-1 {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 30px 0px;
+    }
+  }
+  
